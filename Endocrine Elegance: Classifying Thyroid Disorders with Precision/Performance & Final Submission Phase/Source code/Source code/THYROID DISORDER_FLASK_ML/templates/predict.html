@@ -1,0 +1,114 @@
+<style>
+    body {
+      background-image: url('../static/image/image1.jpg');
+      background-image: url('../static/image/image4.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+     margin: 0;
+     padding: 0;
+}
+
+.center-container {
+    text-align: center;
+    padding: 20px; /* Add padding for spacing if needed */
+    background-color :#2B6ABC;  /* Add background color if needed */
+}
+.center-container1 {
+    text-align: center;
+    padding: 20px; /* Add padding for spacing if needed */
+    color : white  /* Add background color if needed */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: red; /* Green background color */
+    color: white;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #227BB1; /* Darker green color on hover */
+}
+
+</style>
+<html>
+<body>
+    <!-- Navigation buttons at the center -->
+<div class="center-container">
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <!-- Add more buttons as needed -->
+        </ul>
+    </nav>
+</div>
+<div class="center-container1">
+    <form action="/predict" method="post">
+               <br>
+               <br>
+               <br>
+       
+            
+                <label for="age">Age:</label>
+                <input type="text" name="age" required><br>
+                <br>
+                <br>
+                
+                <label for="sex">Sex (0 for male, 1 for female):</label>
+                <input type="text" name="sex" required><br>
+                <br>
+                <br>
+                <label for="tsh">TSH:</label>
+                <input type="text" name="tsh" required><br>
+                <br>
+                <br>
+                <label for="t3">T3:</label>
+                <input type="text" name="t3" required><br>
+                <br>
+                <br>
+                <label for="tt4">TT4:</label>
+                <input type="text" name="tt4" required><br>
+                <br>
+                <br>
+                <label for="t4u">T4U:</label>
+                <input type="text" name="t4u" required><br>
+                <br>
+                <br>
+                <label for="fti">FTI:</label>
+                <input type="text" name="fti" required><br>
+                <br>
+                <br>
+                
+            <div class="center-container1">  
+                
+                <nav>
+                    <ul>
+                        <li><a href="/submit">submit</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </form>
+        
+           
+        </body>
+        </html>
+        
+    </div>
+    
